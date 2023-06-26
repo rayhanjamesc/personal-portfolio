@@ -1,0 +1,237 @@
+:root {
+    --navbar-color: #2C363F;
+    --background-color: #2E6467;
+    --text-color: #DFDFE2;
+    --hover-color: #C6987C;
+    --secondary-color: #908D8C;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+#logo {
+    width: 40px;
+    position: fixed;
+    z-index: 99;
+    top: 2%;
+    left: 2%;
+}
+
+#navbar:not(.navlink) {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    background-color: var(--navbar-color);
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    justify-content: flex-end;
+    z-index: 98;
+}
+
+.buffer {
+    height: 10vh;
+}
+
+.navlink {
+    margin: auto 40px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.navlink.right {
+    margin-right: 90px;
+}
+
+.navlink:hover {
+    background-color: var(--hover-color);
+    color: white;
+    margin: auto 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.navlink.right:hover {
+    margin-right: 70px;
+    background-color: var(--hover-color);
+    color: white;
+}
+
+#welcome {
+    height: 20vh;
+    padding: 15vh 0 25.5vh 0;
+}
+
+#welcome h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+#welcome h3 {
+    color: var(--navbar-color);
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+#hidden-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 94px;
+}
+
+#crater-img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid var(--navbar-color);
+    border-bottom: 2px solid var(--navbar-color);
+    border-right: 2px solid var(--navbar-color);
+}
+
+#underwater-img, #boat-img {
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+}
+
+#crater-flipped {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 2px solid var(--navbar-color);
+    border-bottom: 2px solid var(--navbar-color);
+    border-left: 2px solid var(--navbar-color);
+}
+
+#crater-img, #underwater-img, #boat-img, #crater-flipped {
+    width: 24vw;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#crater-img:hover, #underwater-img:hover, #boat-img:hover, #crater-flipped:hover {
+    opacity: 1;
+}
+
+#header {
+    margin-top: 250px;
+}
+
+section h2 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+#tile-grid {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    align-items: center;
+    margin-left: 11.5vw;
+}
+
+.project-img {
+    width: 35vw;
+    padding: 0;
+    border: 2px solid var(--navbar-color);
+    border-radius: 50px;
+}
+
+.project-tile:hover {
+    transform: scale(1.15);
+}
+
+#survey-form-preview, #tribute-page-preview {
+    margin-bottom: 35px;
+}
+
+label {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 180px;
+    padding-bottom: 200px;
+    background-color: var(--hover-color);
+    padding: 5px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--navbar-color);
+}
+
+#label3 {
+    margin-left: 160px;
+}
+
+#label4 {
+    margin-left: 140px;
+}
+
+#contact-text {
+    font-size: 3rem;
+}
+
+#contact-subtext {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.social {
+    display: inline;
+    align-items: center;
+}
+
+#social-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 2px;
+}
+
+.social-icon {
+    padding: 0 10px;
+}
+
+#ig {
+    width: 30px;
+    padding-top: 1px;
+}
+
+#twt {
+    width: 30px;
+}
+
+#gh {
+    width: 35px;
+    padding-top: 4px;
+}
+
+#li {
+    width: 41px;
+    padding-top: 3.6px;
+}
+
+#em {
+    width: 25px;
+    padding-top: 2.3px;
+}
+
+#ig:hover, #twt:hover, #gh:hover, #li:hover, #em:hover {
+    transform: scale(2);
+}
